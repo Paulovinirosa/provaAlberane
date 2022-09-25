@@ -10,7 +10,7 @@ int main() {
 
 setlocale (LC_ALL, "Portuguese");
 
-      int dia, mes, ano, a, b, c, d;
+      int dia, mes, ano, a, b, c;
       
       cout << "DIGITE O DIA DO NASCIMENTO: " << endl;
       cin >> dia;
@@ -23,15 +23,16 @@ setlocale (LC_ALL, "Portuguese");
       b=(a/100) + (a % 100);
       c= b%5;
 	  
-      if(d%5==0)
+      
+	  if(c==0)
       cout << "PERFIL TIMIDO" <<endl;
-      else if(d%5==1)
+      else if(c==1)
       cout << "PERFIL SONHADOR" <<endl;
-      else if(d%5==2)
+      else if(c==2)
       cout << "PERFIL PAQUERADOR" <<endl;
-      else if(d%5==3)
+      else if(c==3)
       cout << "PERFIL ATRAENTE" <<endl;
-      else if(d%5==4)
+      else if(c==4)
       cout << "PERFIL IRRESISTIVEL" << endl;
                        
 
